@@ -1,5 +1,5 @@
 #----------
-#Chapter 2
+#Chapter 2: variables, data types and operators 
 #----------
 
 x = 12
