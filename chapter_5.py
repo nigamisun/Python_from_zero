@@ -127,3 +127,17 @@ numl.discard(9)
 print(numl)
 num.remove(5)
 print(num)
+
+my_stack1 = []
+my_stack1.append(1)
+my_stack1.append(2)
+my_stack1.append(3)
+print(my_stack1)
+my_stack1.pop()
+print(my_stack1)
+
+my_queue1 = []
+my_queue1.append(1)
+my_queue1.append(2)
+my_queue1.append(3)
+my_queue1.append(4)
