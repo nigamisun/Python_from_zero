@@ -141,3 +141,47 @@ my_queue1.append(1)
 my_queue1.append(2)
 my_queue1.append(3)
 my_queue1.append(4)
+print(my_queue1)
+my_queue1.pop(0)
+print(my_queue1)
+
+my_list2 = [{'name': 'Sergey', 'age': 22}, {'name': 'Peter', 'age': 42},
+{'name': 'Ivan', 'age': 32}]
+sorted_list2 = sorted(my_list2, key=lambda x: x['age'])
+print(sorted_list2)
+
+my_list = ['Peter', 'robot', 'Ivan', 'Sergey']
+my_list.sort(key=lambda x: x.lower())
+print(my_list)
+
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+    if arr[mid] == target:
+        return mid
+    elif arr[mid] < target:
+        low = mid + 1
+    else:
+        high = mid - 1
+    return -1
+
+my_list = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+element = my_list[0][2]
+
+my_dict = {'a': {'b': {'c': 3}}, 'd': 1}
+def process_dict(d):
+    for k, v in d.items():
+        if isinstance(v, dict):
+            process_dict(v)
+        else:
+            print(k, v)
+
+process_dict(my_dict)
+
+#----------
+#exercises
+#----------
+
+#ex 1
