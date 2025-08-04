@@ -145,8 +145,8 @@ print(my_queue1)
 my_queue1.pop(0)
 print(my_queue1)
 
-my_list2 = [{'name': 'Sergey', 'age': 22}, {'name': 'Peter', 'age': 42},
-{'name': 'Ivan', 'age': 32}]
+my_list2 = [{'name': 'Azamat', 'age': 26}, {'name': 'Raul', 'age': 12},
+{'name': 'John', 'age': 52}, {'name': 'Tyson', 'age': 60}]
 sorted_list2 = sorted(my_list2, key=lambda x: x['age'])
 print(sorted_list2)
 
@@ -159,16 +159,37 @@ def binary_search(arr, target):
     high = len(arr) - 1
     while low <= high:
         mid = (low + high) // 2
-    if arr[mid] == target:
-        return mid
-    elif arr[mid] < target:
-        low = mid + 1
-    else:
-        high = mid - 1
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
     return -1
+
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+res = binary_search(arr, 5)
+print("result: ", res)
+
+import searcher 
+
+cnums = {6, 3, 18, -1, 8, 4, 2, 9, 5, 7, 0}
+cnumk = (6, 3, 18, -1, 8, 4, 2, 9, 5, 7, 0)
+cnuml = [6, 3, 18, -1, 8, 4, 2, 9, 5, 7, 0]
+
+b_searchs = searcher.Sort_Search(cnums)
+b_searchk = searcher.Sort_Search(cnumk)
+b_searchl = searcher.Sort_Search(cnuml)
+
+print("b_searchs: ", b_searchs.binary_search(6))
+print("b_searchk: ", b_searchk.binary_search(18))
+print("b_searchl: ", b_searchl.binary_search(0))
+
 
 my_list = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
 element = my_list[0][2]
+print(element)
 
 my_dict = {'a': {'b': {'c': 3}}, 'd': 1}
 def process_dict(d):
