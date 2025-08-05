@@ -206,3 +206,59 @@ process_dict(my_dict)
 #----------
 
 #ex 1
+list_ex = [1, 3, 4, 6, 2, 7, 0, 2]
+tuple_ex = (1, 3, 4, 6, 2, 7, 0, 2)
+dict_ex = {'a':1, 'b':2, 'c':3, 'd':4}
+
+#ex 2
+fruits = ["strawberry", "apricot", "orange", "grape"]
+fruits.append("apple")
+print(fruits)
+
+#ex 3
+coordinates = (3, 5, 6)
+x, y, z = coordinates
+print(f"x = {x} \ny = {y} \nz = {z}")
+
+#ex 4
+person = {"name" : "Peter", 
+          "age" : 42, 
+          "city" : "New Haven"}
+person["city"] = "New York"
+print(person)
+
+#ex 5
+squares_list = [x**2 for x in range(8, 0, -1)]
+print(squares_list)
+
+#ex 6
+numbers_ex = [4, 8, 5, 1, 9, 7, 2, 3, 0]
+numbers_ex_s = sorted(numbers_ex)
+print(numbers_ex_s)
+
+#ex 7
+sublist = [numbers_ex[6], numbers_ex[8], numbers_ex[7]]
+print(sublist)
+
+#ex 8
+squares_dict = {x: x**2 for x in range(10, 0, -1)}
+print(squares_dict)
+
+#ex 9 
+A = {5, 4, 3, 2, 1} 
+B = {7, 8, 6, 5, 4}
+
+print(A | B)
+print(A & B)
+print(A - B)
+print(A ^ B)
+
+#ex 10
+matrix = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+print(matrix)
+
+element = matrix[1][1]
+print(element)
+
+flat = [i for row in matrix for i in row]
+print("Объединённый список:", flat)
