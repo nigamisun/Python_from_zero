@@ -261,4 +261,4 @@ element = matrix[1][1]
 print(element)
 
 flat = [i for row in matrix for i in row]
-print("Объединённый список:", flat)
+print("Union list:", flat)
