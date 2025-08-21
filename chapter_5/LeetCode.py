@@ -1,5 +1,5 @@
 #
-#Data structers: train on LeetCode problems
+#Data structures: training on LeetCode problems
 #
 
 #1. Two Sums
