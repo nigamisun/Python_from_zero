@@ -58,8 +58,33 @@ class Solution121:
 A = Solution121()
 print("answer: ", A.maxProfit(prices = [7,1,5,3,6,4]))
 
-#189
+#189. Rotate Array
 
+#Input: nums = [1,2,3,4,5,6,7], k = 3
+#Output: [5,6,7,1,2,3,4]
+class Solution189:
+    def rotate(self, nums: List[int], k: int) -> None:
+        
+        # k %= len(nums)
+        # for i in range(k):
+        #     temp = nums.pop()
+        #     print(temp)
+        #     nums.insert(0, temp)
+        
+        k %= len(nums)
+        nums.reverse()
+        first = nums[:k]
+        second = nums[k:]
+        first.reverse()
+        second.reverse()
+        nums = first + second
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        print(nums)
+
+B = Solution189()
+B.rotate(nums = [1,2,3,4,5,6,7], k = 3)
 
 #125
 
